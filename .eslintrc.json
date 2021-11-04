@@ -7,7 +7,7 @@
       "jsx": true
     }
   },
-  "plugins": ["testing-library", "jest-dom"],
+  // "plugins": ["testing-library", "jest-dom"],
   "env": {
     "browser": true,
     "node": true,
