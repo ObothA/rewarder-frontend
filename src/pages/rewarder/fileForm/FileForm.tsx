@@ -44,6 +44,7 @@ export default function FileForm({ setRewards }: FileFormProps) {
       if (files) {
         if (!files[0].type.endsWith('csv')) {
           setError('Please select a CSV file');
+          setSelectedFile(undefined);
           return;
         }
         setSelectedFile(files[0]);
@@ -68,7 +69,10 @@ export default function FileForm({ setRewards }: FileFormProps) {
               onChange={changeHandler}
             />
           </div>
-          <button className='submit-btn mt-4 p-2' disabled={loading}>
+          <button
+            className='submit-btn mt-4 p-2'
+            disabled={loading === false && selectedFile ? false : true}
+          >
             Submit
           </button>
           {loading && <Spinner color='primary' type='grow' />}

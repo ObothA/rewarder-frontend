@@ -13,7 +13,7 @@ export default function RewardsTable({
   rewards: reward[] | null;
 }) {
   return (
-    <section className='row mt-5'>
+    <section className='row mt-5 mb-5'>
       <div className='col-12'>
         {rewards && (
           <table className='table table-striped'>
