@@ -1,3 +1,3 @@
 # Welcome to the rewarder front-end
 
-Deployed at:
+Deployed at: https://rewarder-frontend.herokuapp.com/
